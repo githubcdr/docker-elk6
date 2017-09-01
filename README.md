@@ -1,4 +1,4 @@
-# Elasticsearch, Logstash and Kibana 6.0.0 (beta)
+# Elasticsearch, Logstash and Kibana 6.0.0 (beta2)
 
 This is a small container at only 300Mb compressed, running a full functional ELK 6 stack.
 
@@ -29,7 +29,6 @@ sysctl -w vm.max_map_count=262144
 * Maxmind geo data enabled
 * Each process runs as own user
 * multi input index is created based on type
-* docker HEALTHCHECK for elasticsearch
 
 ## Instructions
 
@@ -39,7 +38,7 @@ Start the container
 docker run -d -p 5601:5601 -p 9200:9200 -p 5044:5044 \
   -v /var/lib/elasticsearch:/var/lib/elasticsearch \
   --name elk \
-  cdrocker/elk5:latest
+  cdrocker/elk6:latest
 ```
 
 Check progress with
