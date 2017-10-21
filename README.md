@@ -1,4 +1,4 @@
-# Elasticsearch, Logstash and Kibana 6.0.0 (beta2)
+# Elasticsearch, Logstash and Kibana 6.0.0 (rc1)
 
 This is a small container at only 300Mb compressed, running a full functional ELK 6 stack.
 
