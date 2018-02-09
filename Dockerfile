@@ -3,7 +3,7 @@ FROM anapsix/alpine-java:latest
 
 # changeables
 ENV VERSION=6.2.1
-ENV PKGS="s6 ca-certificates openssl wget unzip git tar nodejs"
+ENV PKGS="s6 ca-certificates openssl wget unzip git tar nodejs coreutils"
 ENV ES_URL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${VERSION}.tar.gz"
 ENV LS_URL="https://artifacts.elastic.co/downloads/logstash/logstash-${VERSION}.tar.gz"
 ENV  K_URL="https://artifacts.elastic.co/downloads/kibana/kibana-${VERSION}-linux-x86_64.tar.gz"
