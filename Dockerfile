@@ -38,6 +38,8 @@ RUN apk    add --update --no-cache ${PKGS} \
 	&& git clone https://github.com/logstash-plugins/logstash-patterns-core.git \
 	&& cp -a logstash-patterns-core/patterns/* /opt/logstash/patterns/ \
 	&& /opt/logstash/bin/logstash-plugin install logstash-input-beats \
+	&& /opt/elasticsearch/bin/elasticsearch-plugin install ingest-user-agent \
+	&& /opt/elasticsearch/bin/elasticsearch-plugin install ingest-geoip \
 	&& ln -s /opt/jdk/bin/java /usr/bin/java \
 	&& rm -rf /tmp/*
 
